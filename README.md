@@ -1,8 +1,8 @@
-# capacitor-plugin-amap
+# capacitor-ionic-plugin-amap
 
 Amap Capacitor
 
-基于https://github.com/yilifangteam/capacitor-plugin-amap修改最新版本
+基于https://github.com/yilifangteam/capacitor-ionic-plugin-amap修改最新版本
 
 大版本跟<a href="https://github.com/ionic-team/capacitor">@capacitor</a>  
 
@@ -11,7 +11,7 @@ Amap Capacitor
 ## Install
 
 ```bash
-npm install capacitor-plugin-amap
+npm install capacitor-ionic-plugin-amap
 npx cap sync
 ```
 

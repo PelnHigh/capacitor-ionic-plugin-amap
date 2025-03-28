@@ -83,7 +83,7 @@ importers:
       '@ionic/vue-router':
         specifier: ^8.0.0
         version: 8.4.1
-      capacitor-plugin-amap:
+      capacitor-ionic-plugin-amap:
         specifier: workspace:*
         version: link:..
       ionicons:
