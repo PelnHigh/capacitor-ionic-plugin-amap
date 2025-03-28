@@ -210,3 +210,42 @@ Enables basic storage and retrieval of dates and times.
 | **`humidity`**      | <code>string</code>               | 湿度          |
 
 </docgen-api>
+
+
+DEMO 
+
+// location.service.ts
+import { Injectable } from '@angular/core';
+import { Platform } from '@ionic/angular';
+import { Helper } from '../helper';
+import { AMap } from 'capacitor-ionic-plugin-amap';
+@Injectable({
+    providedIn: 'root'
+})
+export class LocationService {
+    constructor(private platform: Platform, private helper: Helper) {
+        AMap.init();
+    }
+
+    async getCurrentPosition() {
+        await this.platform.ready();
+        try {
+            const position = await AMap.locate();
+            return position;
+        } catch (err) {
+            console.error('获取位置失败:', err);
+            throw err;
+        }
+    }
+
+    async getWeather(adCode: string) {
+        await this.platform.ready();
+        try {
+            const position = await AMap.weather({ adCode });
+            return position;
+        } catch (err) {
+            console.error('获取位置失败:', err);
+            throw err;
+        }
+    }
+}
