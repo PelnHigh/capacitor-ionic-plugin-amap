@@ -2,11 +2,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "CapacitorPluginAmap",
+    name: "CapacitorIonicPluginAmap",
     platforms: [.iOS(.v13)],
     products: [
         .library(
-            name: "CapacitorPluginAmap",
+            name: "CapacitorIonicPluginAmap",
             targets: ["AMapPlugin"])
     ],
     dependencies: [
